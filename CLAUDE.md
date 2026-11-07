@@ -16,7 +16,7 @@ UIUX 作品**保留但放在最後**（使用者 2026-11-07 決定）：導覽�
 - `motion.html` 動態圖像（影片在 `videos/`）
 - `uiux.html`、`project-*.html` UIUX 專案（沿用自 UIUX 版）
 - `assets/styles.css`、`assets/main.js` 全站共用（Lenis + GSAP）。改了 CSS/JS 要更新各頁的 `?v=` 版本號避免快取。
-- 圖片在 `images/`
+- 圖片在 `images/`：新增圖片一律先壓縮（寬最多 2400px、JPEG 品質約 85），作品牆用 `images/thumb/` 的 1000px 縮圖並加 `loading="lazy"` 與 width/height；影片用 H.264、寬最多 1920、faststart。未壓縮原檔備份在 `C:\Users\user\Desktop\pf\_originals`（不上傳）。
 
 ## 工作習慣
 - 每次修改一個主題就 commit，訊息用「頁面: 改了什麼」格式，然後 push 到 main。
